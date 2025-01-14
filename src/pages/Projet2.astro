@@ -1,0 +1,117 @@
+---
+// Constantes et imports nécessaires
+const title = "MES PROJETS";
+import Navigation from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Importation des données JSON
+import MesProjets from "../data/MesProjets.json";
+
+// ID du projet à afficher (par défaut, le projet avec "id": 1)
+const selectedProjectId = 2; // Remplacez cette valeur pour afficher un autre projet
+
+// Sélection du projet en fonction de l'ID
+const selectedProject = MesProjets.find((project) => project.id === selectedProjectId);
+---
+<html lang="en">
+    <BaseLayout>
+        <Navigation/>
+
+        <main class="bg-red-500 px-6 py-10 pt-32">
+            <h1 class="text-xl absolute top-16 -left-6 rotate-90">
+                {title}
+            </h1>
+        
+            <!-- Conteneur principal pour la galerie et le texte -->
+            <div class="flex flex-col lg:flex-row lg:gap-8">
+                <!-- Section galerie -->
+                <section
+                    class="gallery flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+                >
+                    {
+                        selectedProject
+                        ? Object.keys(selectedProject)
+                              .filter((key) => key.startsWith("image"))
+                              .map((key) => (
+                                  <figure
+                                      key={key}
+                                      class="gallery-item relative group overflow-hidden"
+                                  >
+                                      <img
+                                          src={selectedProject[key]}
+                                          class="gallery-image w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105 cursor-pointer"
+                                      />
+                                  </figure>
+                              ))
+                        : <p class="text-center text-white">Aucun projet sélectionné.</p>
+                    }
+                </section>
+        
+                <!-- Section texte -->
+                <aside
+                    class=" lg:max-w-lg text-sm flex-shrink-0"
+                >
+                    <h2 class="text-4xl font-bold mb-4">
+                        {selectedProject?.titre || "Titre indisponible"}
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        {selectedProject?.text || "Description indisponible"}
+                    </p>
+                </aside>
+            </div>
+        </main>
+        
+        
+        
+
+        <!-- Lightbox -->
+        <div
+            id="lightbox"
+            class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+        >
+            <span
+                id="lightbox-close"
+                class="absolute top-4 right-4 text-white text-4xl cursor-pointer"
+            >
+                &times;
+            </span>
+            <img
+                id="lightbox-image"
+                src=""
+                alt="Lightbox Image"
+                class="max-w-full max-h-full"
+            />
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const galleryImages =
+                    document.querySelectorAll(".gallery-image");
+                const lightbox = document.getElementById("lightbox");
+                const lightboxImage = document.getElementById("lightbox-image");
+                const lightboxClose = document.getElementById("lightbox-close");
+
+                // Open lightbox on image click
+                galleryImages.forEach((image) => {
+                    image.addEventListener("click", () => {
+                        lightboxImage.src = image.src;
+                        lightbox.classList.remove("hidden");
+                    });
+                });
+
+                // Close lightbox on close button click
+                lightboxClose.addEventListener("click", () => {
+                    lightbox.classList.add("hidden");
+                });
+
+                // Close lightbox on outside click
+                lightbox.addEventListener("click", (e) => {
+                    if (e.target === lightbox) {
+                        lightbox.classList.add("hidden");
+                    }
+                });
+            });
+        </script>
+    </BaseLayout>
+</html>
