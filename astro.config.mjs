@@ -10,6 +10,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://sagodira.github.io',
+    site: 'https://sagodira.github.io/portfolio/',
+    base:'/portfolio/',
     integrations: [mdx(), sitemap(), react(), tailwind()],
 });
