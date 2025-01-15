@@ -1,10 +1,10 @@
 [
     {
       "id": 1,
-      "image1":"/athysneak1.jpg",
-      "image2":"/athysneak2.jpg",
-      "image3":"/athysneak3.jpg",
-      "image4":"/athysneak4.jpg",
+      "image1":"/portfolio/athysneak1.jpg",
+      "image2":"/portfolio/athysneak2.jpg",
+      "image3":"/portfolio/athysneak3.jpg",
+      "image4":"/portfolio/athysneak4.jpg",
       "titre":"Athysneak",
       "text":"Athysneak est un projet personnel qui me tient profondément à cœur, incarnant la fusion de deux de mes passions : la création artistique et l'univers de la sneaker. Au fil des années, cette passion s'est intensifiée, me poussant à chercher une manière unique de la mettre en avant. C'est ainsi qu'a germé l'idée de concevoir des posters dédiés, valorisant ces objets qui occupent une place centrale dans mon expression créative."
       
@@ -12,34 +12,34 @@
 
     {
         "id": 2,
-        "image1":"/hiero1.jpg",
-        "image2":"/hiero2.jpg",
-        "image3":"/hiero3.jpg",
+        "image1":"/portfolio/hiero1.jpg",
+        "image2":"/portfolio/hiero2.jpg",
+        "image3":"/portfolio/hiero3.jpg",
         "titre":"Hiero",
         "text":"Dans le cadre de ce projet, nous avions pour mission de concevoir quatre flyers pour la Fédération Hiero, qui organise des concerts de musique underground. La particularité de leurs illustrations réside dans le fait qu'elles ne traitent pas directement de musique, mais mettent en avant des personnages liés à la ville de Limoges. Pour ma part, j'ai choisi de créer une série de basketteurs du CSP, en adoptant un style anti-art pour refléter l'aspect underground. J'ai également utilisé des palettes de couleurs associées à différents genres musicaux tels que la pop, le jazz, le blues et le reggae."
         
       },
       {
         "id": 3,
-        "image1":"/ceramique1.jpg",
-        "image2":"/ceramique2.jpg",
-        "image3":"/ceramique3.jpg",
+        "image1":"/portfolio/ceramique1.jpg",
+        "image2":"/portfolio/ceramique2.jpg",
+        "image3":"/portfolio/ceramique3.jpg",
         "titre":"Parcours des métiers de la céramique",
         "text":"Ce projet scolaire consistait à créer des illustrations pour l'Office de Tourisme de Limoges, qui souhaitait organiser un festival dédié aux métiers de la céramique. Les illustrations avaient un objectif touristique et devaient donc être inclusives. Pour ma réalisation, j'ai choisi d'adopter un style simple et linéaire, afin d'évoquer la délicatesse nécessaire à l'exercice de ces métiers artisanaux."
         
       },
       {
         "id": 4,
-        "image1":"/geocatching1.png",
-        "image2":"/geocatching2.png",
-        "image3":"/geocatching3.jpg",
+        "image1":"/portfolio/geocatching1.png",
+        "image2":"/portfolio/geocatching2.png",
+        "image3":"/portfolio/geocatching3.jpg",
         "titre":"Badges Géocatching",
         "text":"Lors de mon stage au sein de l'entreprise Proximit, j'ai été chargé de réaliser plusieurs illustrations/badges pour des applications de géocaching telles que Terra Aventura, les Gnolus, et Louison Pignon. J'ai ainsi conçu des badges ayant un objectif de communication. Le badge Terra a été utilisé pour marquer le début de la nouvelle saison de l'application et promouvoir sa date de lancement. En complément, j'ai également réalisé un badge et une affiche tout deux sur le thème des Jeux Olympiques 2024, mettant en scène les personnages principaux du jeu en train de remporter une épreuve ou en train de brandir la flamme."
         
       },
       {
         "id": 5,
-        "image1":"/frise.jpg",
+        "image1":"/portfolio/frise.jpg",
         "titre":"L'Art et le Temps",
         "text":"L'art et le temps constituait un projet scolaire au cours duquel nous avions pour mission de concevoir une frise chronologique illustrant les divers mouvements artistiques, tout en identifiant les figures emblématiques associées à ces périodes. L'objectif était d'intégrer une dimension interactive à cette frise, permettant d'afficher des informations complémentaires sur les artistes et leurs mouvements respectifs. Pour ma réalisation, j'ai choisi d'adopter un style évoquant une constellation, agrémenté d'une touche vintage."
         

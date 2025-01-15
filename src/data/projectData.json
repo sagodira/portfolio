@@ -2,56 +2,56 @@
     {
       "id": 1,
       "name": "AJ1",
-      "image": "/AJ1-500.jpg",
+      "image": "/portfolio/AJ1-500.jpg",
       "caracteristique": "Illustratot, After Effect"
     },
     {
       "id": 2,
       "name": "Forum",
-      "image": "/forum-500.jpg",
+      "image": "/portfolio/forum-500.jpg",
       "caracteristique": "Illustratot, After Effect"
     },
     {
       "id": 3,
       "name": "Hiero",
-      "image": "/hiero1.jpg",
+      "image": "/portfolio/hiero1.jpg",
       "caracteristique": "Illustratot, After Effect"
     },
     {
       "id": 4,
       "name": "Terra",
-      "image": "/badge-terra.png",
+      "image": "/portfolio/badge-terra.png",
       "caracteristique": "Illustratot, After Effect"
     },
     {
         "id": 5,
         "name": "Cerra",
-        "image": "/ceramiquemockup.jpg",
+        "image": "/portfolio/ceramiquemockup.jpg",
         "caracteristique": "Illustratot, After Effect"
       },
   
       {
         "id": 6,
         "name": "Athysneak",
-        "image": "/athysneakMockup.jpg",
+        "image": "/portfolio/athysneakMockup.jpg",
         "caracteristique": "Illustratot, After Effect"
       },
       {
         "id": 7,
         "name": "hieromockup",
-        "image": "/hieromockup.png",
+        "image": "/portfolio/hieromockup.png",
         "caracteristique": "Illustratot, After Effect"
       },
       {
         "id": 8,
         "name": "louison",
-        "image": "/louison.jpg",
+        "image": "/portfolio/louison.jpg",
         "caracteristique": "Illustratot, After Effect"
       },
       {
         "id": 9,
         "name": "louisonMochup",
-        "image": "/louisonmockup.png",
+        "image": "/portfolio/louisonmockup.png",
         "caracteristique": "Illustratot, After Effect"
       }
   ]
