@@ -4,8 +4,24 @@ import Navigation from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import MesProjets from "../data/MesProjets.json";
 
-const selectedProjectId = 2; // Remplacez cette valeur pour afficher un autre projet
-const selectedProject = MesProjets.find((project) => project.id === selectedProjectId);
+// Définir un type pour un projet
+type Project = {
+    id: number;
+    image1: string;
+    image2: string;
+    image3: string;
+    image4?: string; // image4 est facultatif
+    titre: string;
+    text: string;
+};
+
+const selectedProjectId = 1; // ID du projet à afficher
+const selectedProject = MesProjets.find((project) => project.id === selectedProjectId) as Project | undefined;
+
+// Extraire les clés des images
+const imageKeys = selectedProject
+    ? (Object.keys(selectedProject) as (keyof Project)[]).filter((key) => key.startsWith("image"))
+    : [];
 ---
 <html lang="en">
     <BaseLayout>
@@ -19,36 +35,34 @@ const selectedProject = MesProjets.find((project) => project.id === selectedProj
                 <!-- Section galerie -->
                 <section class="gallery flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {selectedProject
-                        ? Object.keys(selectedProject)
-                              .filter((key) => key.startsWith("image"))
-                              .map((key) => (
-                                  <figure class="gallery-item relative group overflow-hidden">
-                                      <label for={`lightbox-${key}`} class="cursor-pointer">
-                                          <img
-                                              src={selectedProject[key]}
-                                              alt=""
-                                              class="gallery-image w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105"
-                                          />
-                                      </label>
-                                      <!-- Checkbox pour la lightbox -->
-                                      <input type="checkbox" id={`lightbox-${key}`} class="hidden peer" />
-                                      <div
-                                          class="lightbox fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden peer-checked:flex"
+                        ? imageKeys.map((key) => (
+                              <figure class="gallery-item relative group overflow-hidden">
+                                  <label for={`lightbox-${key}`} class="cursor-pointer">
+                                      <img
+                                          src={selectedProject[key] as string}
+                                          alt=""
+                                          class="gallery-image w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105"
+                                      />
+                                  </label>
+                                  <!-- Checkbox pour la lightbox -->
+                                  <input type="checkbox" id={`lightbox-${key}`} class="hidden peer" />
+                                  <div
+                                      class="lightbox fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden peer-checked:flex"
+                                  >
+                                      <label
+                                          for={`lightbox-${key}`}
+                                          class="absolute top-4 right-4 text-white text-4xl cursor-pointer"
                                       >
-                                          <label
-                                              for={`lightbox-${key}`}
-                                              class="absolute top-4 right-4 text-white text-4xl cursor-pointer"
-                                          >
-                                              &times;
-                                          </label>
-                                          <img
-                                              src={selectedProject[key]}
-                                              alt="Lightbox Image"
-                                              class="max-w-full max-h-full"
-                                          />
-                                      </div>
-                                  </figure>
-                              ))
+                                          &times;
+                                      </label>
+                                      <img
+                                          src={selectedProject[key] as string}
+                                          alt="Lightbox Image"
+                                          class="max-w-full max-h-full"
+                                      />
+                                  </div>
+                              </figure>
+                          ))
                         : <p class="text-center text-white">Aucun projet sélectionné.</p>
                     }
                 </section>
