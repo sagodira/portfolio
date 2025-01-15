@@ -1,20 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {},
-	},
-	plugins: [],
-}
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import react from '@astrojs/react';
+import tailwind from '@astrojs/tailwind';
 
-module.exports = {
-	content: ["./src/**/*.{html,js,astro}"],
-	theme: {
-	  extend: {},
-	},
-	plugins: [
-	  require('@tailwindcss/aspect-ratio'),
-	],
-  };
-
-
+export default defineConfig({
+    site: 'https://sagodira.github.io',
+    base: '/',
+    integrations: [mdx(), sitemap(), react(), tailwind()],
+});
