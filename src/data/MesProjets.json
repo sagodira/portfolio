@@ -43,6 +43,14 @@
         "titre":"L'Art et le Temps",
         "text":"L'art et le temps constituait un projet scolaire au cours duquel nous avions pour mission de concevoir une frise chronologique illustrant les divers mouvements artistiques, tout en identifiant les figures emblématiques associées à ces périodes. L'objectif était d'intégrer une dimension interactive à cette frise, permettant d'afficher des informations complémentaires sur les artistes et leurs mouvements respectifs. Pour ma réalisation, j'ai choisi d'adopter un style évoquant une constellation, agrémenté d'une touche vintage."
         
+      },
+      {
+        "id": 6,
+        "image1":"/portfolio/saint1.jpg",
+        "image2":"/portfolio/saint2.png",
+        "titre":"Saint - Muze",
+        "text":"Saint-Muze constituait un projet scolaire mêlant création 3D, webdesign et motion design. L'objectif était de recréer en 3D un objet innovant existant, puis de concevoir un site web dédié à cet objet, avant d'animer ce site. Pour ma réalisation, j'ai choisi de travailler sur Saint-Muze, une entreprise spécialisée dans l'upcycling, qui crée des sacs à partir de vêtements de marques telles que Nike."
+        
       }
 
   ]

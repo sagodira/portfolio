@@ -1,58 +1,50 @@
 [
     {
       "id": 1,
-      "name": "AJ1",
+      "name": "Athysneak",
       "image": "/portfolio/AJ1-500.jpg",
-      "caracteristique": "Illustratot, After Effect"
+      "caracteristique": "Illustrator, After Effect",
+      "link":"/portfolio/athysneak"
     },
     {
       "id": 2,
-      "name": "Forum",
-      "image": "/portfolio/forum-500.jpg",
-      "caracteristique": "Illustratot, After Effect"
+      "name": "Art et temps",
+      "image": "/portfolio/ArtEtTempsCover.jpg",
+      "caracteristique": "Illustratot, After Effect",
+      "link":"/portfolio/Art"
+
     },
     {
       "id": 3,
       "name": "Hiero",
       "image": "/portfolio/hiero1.jpg",
-      "caracteristique": "Illustratot, After Effect"
+      "caracteristique": "Illustrator, After Effect",
+      "link":"/portfolio/hiero"
     },
     {
       "id": 4,
-      "name": "Terra",
+      "name": "Badge",
       "image": "/portfolio/badge-terra.png",
-      "caracteristique": "Illustratot, After Effect"
+      "caracteristique": "Illustrator, After Effect",
+      "link":"/portfolio/badge"
+
     },
     {
         "id": 5,
-        "name": "Cerra",
+        "name": "Céramique",
         "image": "/portfolio/ceramiquemockup.jpg",
-        "caracteristique": "Illustratot, After Effect"
+        "caracteristique": "Illustratot, After Effect",
+        "link":"/portfolio/parcourcéramique"
+
       },
-  
       {
         "id": 6,
-        "name": "Athysneak",
-        "image": "/portfolio/athysneakMockup.jpg",
-        "caracteristique": "Illustratot, After Effect"
-      },
-      {
-        "id": 7,
-        "name": "hieromockup",
-        "image": "/portfolio/hieromockup.png",
-        "caracteristique": "Illustratot, After Effect"
-      },
-      {
-        "id": 8,
-        "name": "louison",
-        "image": "/portfolio/louison.jpg",
-        "caracteristique": "Illustratot, After Effect"
-      },
-      {
-        "id": 9,
-        "name": "louisonMochup",
-        "image": "/portfolio/louisonmockup.png",
-        "caracteristique": "Illustratot, After Effect"
+        "name": "Saint-Muze",
+        "image": "/portfolio/saintCover.jpg",
+        "caracteristique": "Illustrator, After Effect",
+        "link":"/portfolio/saintmuze"
+
       }
+      
   ]
   

@@ -10,7 +10,11 @@ export default {
 module.exports = {
 	content: ["./src/**/*.{html,js,astro}"],
 	theme: {
-	  extend: {},
+	  extend: {
+		backgroundColor:{
+			'orange-bg': '#F6693C',
+		},
+	  },
 	},
 	plugins: [
 	  require('@tailwindcss/aspect-ratio'),
